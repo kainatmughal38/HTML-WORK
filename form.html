@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<style>
+fieldset{
+	valign:center;
+	border-color:rgba(251,249,21,1.00);
+	border:10px solid yellow;
+	margin-bottom:10px;
+	width:720px;
+	background-color:#FFC;
+}
+label {
+	width:180px;
+	display:inline-block;
+	text-align:right;
+	text-align:top;
+	font-size:18px;
+	font:bold;
+	font:"Arial Black", Gadget, sans-serif;
+}
+legend {font:bolder;}
+
+fieldset legend label {
+	alignment-adjust:middle;
+	vertical-align:central;
+	width:auto;
+	alignment-adjust:central;
+	
+}
+.dot{
+     width:360px;
+	 height:50px;}
+.dat{
+	text-align:center;
+   background-color:#C00;
+   display:inline-block;
+   width:100px;
+   height:30px;
+   color:#FFF;
+   }
+   .kj{
+	   width:100px;
+	   height:30px;
+	   color: #FFF;
+	   background-color:#909;
+   text-align:center;
+   font color:#FFF;}
+   h1{valign:center;}
+   .hat{ width:70%;
+	   margin-left:15%;
+	   margin-right:15%;
+   }
+   label:hover{
+	   font-size:25px;}
+	   input:hover{
+		   font-size:25px;}
+   </style>
+<meta charset="utf-8">
+<title>Form</title>
+</head>
+<body class="hat">
+<h1>PLEASE ENTER YOUR DETAILS FOR OUR DATING WEBSITE!</h1>
+<h2><form action="http://ihome.ust.hk/~rossiter/cgi-bin/show everything.php" enctype="multipart/form-data" method="post">
+ <fieldset>
+    <legend><label>Your Face:</label></legend>
+    <label>Your Image:</label>
+    <input type='file' name='pic' id='pic' required>
+    <br>
+    <label>Image preview:</label><img id="preview" width="150"/>
+  </h2></fieldset>
+  <fieldset>
+  <legend><h2><label>Your General Details</label></h2></legend>
+<h3><label>Name:</label> <input type='text' name='name' placeholder="Enter your name" required><br>
+<label>Gender:</label><input type='radio' name='gender' required>Male<input type='radio' name='gender' required>Female<br>
+<label>Age:</label><input type='number' name="num" required><br>
+<label>Date of Birth:</label><input type="date" name='bday'><br>
+<label>Favourite color:</label><input type='color' name='favcolor'><br>
+<label>Which country:</label>
+<select name="countries">
+<option class="aj" value=''></option>
+    <option value="Pakistan"><label>Pakistan</label></option>
+    <option value="India"><label>India</label></option>
+    <option value="America"><label>America</label></option>
+    <option value="Australia"><label>Australia</label></option>
+    <option value="Belgium"><label>Belgium</label></option>
+    </select>
+</h3></fieldset><br>
+<fieldset>
+<legend><h2><label>Your Indicators</label></h2></legend>
+<table>
+<tr>
+<th rowspan="2"><label>Height:</label><br><label>Salary:</label></th><th rowspan="2"><label class="dat" >Short</label><br><label class="dat">Poor</label></th>
+<th rowspan="2"><input type='range' min="0" max="100"><br><input type='range' min="0" max="100"></th><th><label class="kj">Tall</label><br><label class="kj">Rich</label></th><br></tr></table>
+ </fieldset><br>
+ <fieldset>
+<legend><h2><label>Your Contact Information</label></h2></legend>
+<h2><label>Email:</label><input type='email' name='email' required><br>
+<label>Mobile:</label><input type='number' name='tel'><br>
+<label>Address:</label><input type='textarea' class="dot" name='address'><br>
+<label>Methods to contact you:</label><label><input type='checkbox' name="email">Email</label><label><input type='checkbox' name="whatsapp">Whatsapp</label><label><label><input type='checkbox' name='app'>In-app chat</label></h2>
+</fieldset>
+<input type="submit" name="submit">
+</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script> 
+</body>
+</html>
